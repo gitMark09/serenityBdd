@@ -1,14 +1,11 @@
 package Steps;
 
-
-import Pages.Homepage;
 import Pages.Loginpage;
 import net.serenitybdd.annotations.Step;
 
 public class LoginSteps {
 
     Loginpage lp;
-    Homepage hp;
 
     @Step
     public void openSite(){

@@ -9,12 +9,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Steps.LoginSteps;
+import Steps.HomepageSteps;
 
 @RunWith(SerenityRunner.class)
 public class LoginTest {
 
     @Steps
     LoginSteps loginSteps;
+    @Steps
+    HomepageSteps homepageSteps;
 
     @Managed(driver = "chrome")
     WebDriver driver;
@@ -27,6 +30,7 @@ public class LoginTest {
         loginSteps.enterUsername("standard_user");
         loginSteps.enterPassword("secret_sauce");
         loginSteps.clickLoginButton();
+        homepageSteps.getVisibilityBurgerIcon();
 
     }
 

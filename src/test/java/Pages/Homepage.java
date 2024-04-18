@@ -13,7 +13,7 @@ public class Homepage extends PageObject {
         btn_BurigerIcon.click();
     }
 
-    public void click_LogoutNBtn(){
+    public void click_LogoutBtn(){
         btn_Logout.click();
     }
 
